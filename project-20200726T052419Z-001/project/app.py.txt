@@ -1,0 +1,75 @@
+from flask import Flask,render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return render_template('vhome.html')
+@app.route('/templates/vhomeadminlogin.html')
+def r1():
+    return render_template('vhomeadminlogin.html')
+@app.route('/templates/vhomeregistration.html')
+def r2():
+    return render_template('vhomeregistration.html')
+@app.route('/templates/vhomelogin.html')
+def r3():
+    return render_template('vhomelogin.html')
+
+@app.route('/templates/vhomehelp.html')
+def r4():
+    return render_template('vhomehelp.html')
+
+@app.route('/')
+def hello1():
+    return render_template('vhomehelp.html')
+@app.route('/templates/vhome.html')
+def r6():
+    return render_template('vhome.html')
+
+@app.route('/')
+def hello2():
+    return render_template('vhomelogin.html')
+@app.route('/templates/vhomeinterface.html')
+def r5():
+    return render_template('vhomeinterface.html')
+
+@app.route('/')
+def hello3():
+    return render_template('vhomeinterface.html')
+@app.route('/templates/vhomepostedit.html')
+def r7():
+    return render_template('vhomepostedit.html')
+@app.route('/')
+def hello4():
+    return render_template('vhomepostedit.html')
+@app.route('/templates/vhomeinterface')
+def r8():
+    return render_template('vhomeinterface.html')
+@app.route('/templates/vhomevariation.html')
+def r9():
+    return render_template('vhomevariation.html')
+@app.route('/')
+def hello5():
+    return render_template('vhomeregistration.html')
+@app.route('/templates/vhomelogin.html')
+def r10():
+    return render_template('vhomelogin.html')
+@app.route('/')
+def hello6():
+    return render_template('vhomevariation.html')
+@app.route('/templates/vhomeinterface.html')
+def r11():
+    return render_template('vhomeinterface.html')
+def hello6():
+    return render_template('vhomeadminlogin.html')
+@app.route('/templates/vhomeadmin.html')
+def r12():
+    return render_template('vhomeadmin.html')
+
+
+
+
+
+
+if __name__ == '__main__':
+    app.run()
